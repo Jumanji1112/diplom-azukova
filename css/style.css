@@ -103,11 +103,11 @@ h1 {
   font-size: 20px;
   font-family: opensans-bold, sans-serif;
   color: #0f0d0e;
-  line-height: 29px;
-  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   font-weight: normal;
+  text-align: center;
+  line-height: 29px;
 
 }
 .title::after{
@@ -161,20 +161,24 @@ h1 {
 .category-tabl {
   border: 3px solid #b59f5b;
   flex-wrap: wrap;
-  margin-right: 20px;
   position: absolute;
-  margin-bottom: 15px;
   z-index: 4;
   display: flex;
-  margin-left: 20px;
   padding: 7%;
   box-sizing: border-box;
-  
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.category-tabl {
 }
 .category-link{
   text-decoration: none;
   color: #b59f5b;
-  font-size: 14px;
+  font-size: 16px;
   font-family: opensans-bold, sans-serif;
   text-transform: uppercase;  
   padding-right: 15px;
@@ -190,6 +194,7 @@ h1 {
   font-family: opensans-bold, sans-serif;
   text-transform: uppercase; 
   font-weight: normal;
+  
 }
 .category-title-link:hover{
   color:#b59f5b;
@@ -224,6 +229,7 @@ main{
 }
 .last-post{
   display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   max-width: 793px;
   padding-left: 15px;
@@ -235,6 +241,10 @@ main{
   margin-right: 30px;
   max-width: 100%;
 }
+.content {
+  max-width: 360px;
+}
+
 .teg-side-conteiner {
   display: flex;
   flex-direction: column;
@@ -326,6 +336,7 @@ main{
   height: 70px;
 }
 .post-titl-side {
+  display:flex;
   font-size: 14px;
   font-family: opensans-bold, sans-serif;
   line-height: 18px;
@@ -334,6 +345,7 @@ main{
   margin-bottom: 0;
   text-transform:uppercase;
   font-weight: normal;
+  text-decoration: none;
 }
 .post-titl-side:hover {
   color: #b59f5b; 
@@ -762,7 +774,7 @@ footer {
   -webkit-appearance: none;
   -moz-appearance:none;
   background-color: #f3f7f6;
-  max-width: 278px;
+  min-width: 278px;
   min-height: 130px;
   border: 0;
   padding: 20px;
@@ -770,7 +782,7 @@ footer {
   box-sizing: border-box;
 }
 .fidback-button {
-  max-width: 278px;
+  min-width: 278px;
   box-sizing: border-box;
   height: 48px;
   background-color: #b59f5b;
@@ -1020,6 +1032,7 @@ footer{
   width: 25px;
   height: 20px;
   margin-left: auto;
+  order: -2;
 
 }
 .menu__button-label {
@@ -1049,8 +1062,7 @@ footer{
   max-width: 270px;
   margin: auto;
   margin-bottom: 40px;
-  margin-top: 150px;
-  order:2;
+  margin-top: 170px;
 }
 h1 {
   margin: auto;
@@ -1144,10 +1156,15 @@ main{
 .shop{
   max-width: 360px;
   margin-bottom: 44px;
+  padding-right: 15px;
 }
 .product{
   width: 100%;
   margin-bottom: 28px;
+}
+.product:nth-child(n+2){
+    margin-left: 0;
+
 }
 .product-title {
   font-size: 17px;
