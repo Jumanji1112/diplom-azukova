@@ -297,17 +297,18 @@
         </article>
       </div>
       <form class="search">
-        <input type="hidden">
+        <span class="visually-hidden">Строка ввода запроса для поиска</span>
         <input class="search-row" type="search" required placeholder="Найти...">
         <button class="button-sesrch" type="submit">
-          <span class="visually-hidden">Поиск</span>
-        </button>
+          <span class="visually-hidden">Кнопка для начала поиска</span></button>
       </form>
       <form class="mailing">
         <h3 class="title-side">Рассылка</h3>
         <input type="hidden" name="email">
-        <input class="mailing-row" type="email" required placeholder="Ваш email-адрес">
-        <button class="button-mailing" type="submit">Подписаться</button>
+        <span class="visually-hidden">Строка для ввода адреса почты</span>
+        <input class="mailing-row" type="email" required placeholder="Ваш email-адрес"> 
+        <button class="button-mailing" type="submit">Подписаться
+        <span class="visually-hidden">Кнопка для отправки адреса почты</span></button>
       </form>
       <div class="teg-side-conteiner">
         <h3 class="title-side">Теги</h3>
@@ -490,7 +491,7 @@
         <button class="fidback-close"></button>
         <div class="fidback">
           <h2 class="title">Ваш фидбек</h2>
-          <form action="" class="fidback-form">
+          <form class="fidback-form">
             <div class="fidback-row">
               <span class="fidback-question">Как часто вы заходите на сайт?</span>
               <select class="fidback-row-area">
@@ -502,10 +503,12 @@
             </div>
             <div class="fidback-row-radio">
               <label class="fidback-radio">
+                <span class="visually-hidden">Ответ "Да"</span>
                 <input type="radio" name="radio-group" class="radio">
                 <span class="radio-group-text">Да</span>
               </label>
               <label class="fidback-radio">
+                <span class="visually-hidden">Ответ "Нет"</span>
                 <input type="radio" name="radio-group" class="radio" >
                 <span class="radio-group-text">Нет</span>
               </label>
