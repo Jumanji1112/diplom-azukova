@@ -202,6 +202,7 @@ h1 {
 
 .category-list{
   list-style: none;
+
 }
 .category-teg{
   display: flex;
@@ -586,6 +587,7 @@ main{
   flex-direction:column;
   font-size: 14px;
   font-family: opensans-bold, sans-serif;
+  padding-bottom: 9px;
 }
 .price-sale{
   text-decoration: line-through;
@@ -809,10 +811,10 @@ footer {
   margin-bottom: 50px;
 }
 .container {
-  max-width: 697px;
+  max-width: 670px;
 }
 .logo-menu{
-  max-width: 697px;
+  max-width: 670px;
   align-items: space-between;
   flex-direction: row;
 }
@@ -870,6 +872,7 @@ h1 {
 
 }
 .category{
+  max-width:;
   width: calc(50% - 3px);
   margin-bottom: 3px;
 }
@@ -965,7 +968,7 @@ main{
   margin-left: 0;
 }
 footer{
-  max-width: 697px;
+  max-width: 670px;
   margin-bottom: 50px;
 }
 }
@@ -978,7 +981,7 @@ footer{
 
 }
 .category{
-  width: calc(25% - 3px);
+  width: calc(50% - 3px);
   margin-bottom: 3px;
 }
 .category:nth-child(n+2){
